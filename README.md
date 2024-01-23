@@ -1,3 +1,6 @@
+⚠　This is a sample; it is better to use the CLI commands in whisper
+
+
 # audio2srtfile
 Generate srt file from audio data
 
