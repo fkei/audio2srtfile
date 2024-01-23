@@ -16,6 +16,7 @@ poetry run start -i <input_file> -o <output_file> -m <model_file>
 > Model type
 > poetry run start --help で確認できます
 
+ex. `poetry run start -i ./hoge.mp3 -o ./hoge.srt -m large`
 
 ## GPU
 
