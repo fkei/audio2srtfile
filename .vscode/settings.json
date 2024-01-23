@@ -1,5 +1,4 @@
 {
-  // ファイルツリーの見た目を整理させる
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "*.py": "test_$(capture).py"
