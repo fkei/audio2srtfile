@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "audio2srtfile"
+version = "0.1.0"
+description = ""
+authors = ["fkei <kei.topaz@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "audio2srtfile", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ffmpeg = "^1.4"
+pysrt = "^1.1.2"
+openai-whisper = "^20231117"
+torch = "^2.1.2"
+torchvision = "^0.16.2"
+torchaudio = "^2.1.2"
+numpy = "^1.26.3"
+numba = "^0.58.1"
+transformers = "^4.37.0"
+datasets = "^2.16.1"
+accelerate = "^0.26.1"
+librosa = "^0.10.1"
+soundfile = "^0.12.1"
+
+[[tool.poetry.source]]
+name = "torch_cu117"
+url = "https://download.pytorch.org/whl/cu117"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "audio2srtfile.cli:main"
+
